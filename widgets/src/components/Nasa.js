@@ -20,34 +20,18 @@ const Nasa = () => {
       });
       
 
-    //     fetch(`https://api.nasa.gov/planetary/earth/imagery?lon=${long}&lat=${lat}&date=2019-02-01&dim=0.15&api_key=CTPTGJww4tZCcSiJzdCGKUqhNW3N0GitJNKFJ2Ro`)
-    //     .then(response => response.blob())
-    //     .then(() => {setImageData(imageData)});
-
-    //     console.log(imageData)
-    //     console.log(lat)
-    //     console.log(long)
+    
      }
         fetch(`https://api.nasa.gov/planetary/earth/imagery?lon=${long}&lat=${lat}&dim=0.2000&api_key=CTPTGJww4tZCcSiJzdCGKUqhNW3N0GitJNKFJ2Ro`)
         .then(response => response.blob())
         .then(image => {const localURL = URL.createObjectURL(image)
         setImageData(localURL)}, [imageData]);
-        // console.log(imageData)
-
         
-        // console.log(lat)
-        // console.log(long)
     
     fetchData();
-  }, [lat, long])
+  }, [lat, long, imageData])
   
-//   const nasafetch = (lat, long) =>{
-//       fetch(`https://api.nasa.gov/planetary/earth/imagery?lon=${long}&lat=${lat}&date=2019-02-01&dim=0.15&api_key=CTPTGJww4tZCcSiJzdCGKUqhNW3N0GitJNKFJ2Ro`)
-//       .then(response => response.blob())
-//       .then(image => {const localURL = URL.createObjectURL(image)
-//       setImageData(localURL)}, []);
-//       console.log(imageData)
-//   }
+
   
   return (
     <div className="App">
