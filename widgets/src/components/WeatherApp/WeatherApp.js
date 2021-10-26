@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import WeatherInfo from './WeatherComponent/WeatherInfo';
+import { Button } from 'reactstrap';
 
 const text = {
   textAlign: 'center'
@@ -35,7 +36,7 @@ export default function WeatherApp() {
     <div className="WeatherApp">
       {(typeof data.main != 'undefined') ? (
         <div style={center}>
-          <button>&#176;F / &#176;C</button><br/><br/>
+          <Button>&#176;F / &#176;C</Button><br/><br/>
           <WeatherInfo weatherData={data}/>
         </div>
         
