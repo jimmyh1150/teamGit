@@ -27,6 +27,7 @@ const Nasa = () => {
   return (
     <div className="App">
         <img alt="" src={imageData}/>
+        <br/>
     </div>
   );
   }
