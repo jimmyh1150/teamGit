@@ -39,11 +39,11 @@ const App = () => {
           <div className="row" style={row}>
             <div className="intro-text col" style={col}>
               <h3>Hi There!</h3>
-              <p>This is our app. <br/>Here, you can:</p>
+              <p>This is our app. <br/>Here you can:</p>
               <ol style={list}>
                 <li>Check the weather of your current location</li>
                 <li>Browse images from Nasa</li>
-                <li>Check Ticketmaster for events near your current location.</li>
+                <li>Check Ticketmaster for events near you.</li>
               </ol>
             </div>
             <div className="col" style={col}>
@@ -57,10 +57,10 @@ const App = () => {
         <h3 style={headers}>TODAY'S WEATHER</h3><br/>
         <WeatherApp/>
         <hr/>
-        <h3 style={headers}>NASA APP HERE</h3>
+        <h3 style={headers}>IMAGE FROM NASA</h3>
         <Nasa/>
         <hr/>
-        <h3 style={headers}>TICKETMASTER APP HERE</h3>
+        <h3 style={headers}>TICKETMASTER</h3>
         <TicketMaster/>
       </div>
     </div>
