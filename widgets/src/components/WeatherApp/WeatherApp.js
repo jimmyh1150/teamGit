@@ -14,7 +14,6 @@ export default function WeatherApp() {
   const [long, setLong] = useState([]);
   const [data, setData] = useState([]);
 
-
   useEffect(() => {
     const fetchData = async () => {
       navigator.geolocation.getCurrentPosition(function(position) {
@@ -41,7 +40,7 @@ export default function WeatherApp() {
         </div>
         
       ): (
-        <div style={text}>Could not get weather. Please refresh the page.</div>
+        <div style={text}>Loading . . .</div>
       )}
       
     </div>

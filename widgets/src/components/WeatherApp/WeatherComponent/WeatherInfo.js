@@ -5,12 +5,13 @@ import {
 } from 'reactstrap';
 
 
-const WeatherCard = ({weatherData}) => (
-
+const WeatherCard = ({weatherData}) => {
+  
+  return (
   <div className="container">
     <Card className="weather-container">
         <CardSubtitle className="location">The weather in {weatherData.name} is: </CardSubtitle><br/>
-        <CardSubtitle className="info"><b>Temperature:</b> {weatherData.main.temp} &#8457;</CardSubtitle>
+        <CardSubtitle className="info"><b>Temperature:</b> {weatherData.main.temp} &#176;</CardSubtitle>
         <CardSubtitle className="info"><b>Description:</b> {weatherData.weather[0].description}</CardSubtitle>
         <CardSubtitle className="info"><b>Humidity:</b> {weatherData.main.humidity} %</CardSubtitle>
         <div className="center">
@@ -18,7 +19,8 @@ const WeatherCard = ({weatherData}) => (
         </div>
     </Card>
   </div>
+  )
 
-)
+}
 
 export default WeatherCard;

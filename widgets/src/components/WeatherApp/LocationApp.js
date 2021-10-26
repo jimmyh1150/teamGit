@@ -30,7 +30,7 @@ export default function WeatherApp() {
       {(typeof data.main != 'undefined') ? (
         <Location weatherData={data}/>
       ): (
-        <div>Could not get location. Please refresh the page.</div>
+        <div>Loading . . .</div>
       )}
       
     </div>
