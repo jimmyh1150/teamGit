@@ -1,10 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.css'; 
 import React from 'react';
 import HeaderNAV from './components/site/HeaderNAV';
 import LocationApp from './components/WeatherApp/LocationApp';
 import WeatherApp from './components/WeatherApp/WeatherApp';
 import TicketMaster from './components/TicketMaster';
-import Nasa from './components/Nasa';
-import 'bootstrap/dist/css/bootstrap.css'; 
+import Nasa from './components/Nasa/Nasa';
+
 
 
 const row = {
