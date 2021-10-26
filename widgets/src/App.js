@@ -3,6 +3,7 @@ import HeaderNAV from './components/site/HeaderNAV';
 import LocationApp from './components/WeatherApp/LocationApp';
 import WeatherApp from './components/WeatherApp/WeatherApp';
 import TicketMaster from './components/TicketMaster';
+import Nasa from './components/Nasa';
 import 'bootstrap/dist/css/bootstrap.css'; 
 
 
@@ -56,6 +57,7 @@ const App = () => {
         <WeatherApp/>
         <hr/>
         <h3 style={headers}>NASA APP HERE</h3>
+        <Nasa/>
         <hr/>
         <h3 style={headers}>TICKETMASTER APP HERE</h3>
         <TicketMaster/>
