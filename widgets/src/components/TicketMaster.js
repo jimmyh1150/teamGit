@@ -40,7 +40,7 @@ useEffect(() => {
             <p>{status}</p>
             <br />
             <div><h1></h1>
-               {eventList.map(event => <div><h2>{event.url}</h2></div>)}   
+               {eventList.map(event => <div><a href={event.url}>{event.name}</a></div>)}      
              <br />
              <br />
              <br />
